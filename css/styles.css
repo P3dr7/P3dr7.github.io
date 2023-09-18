@@ -8,12 +8,13 @@
 
 /* Variables */
 :root{
-    --main-color: #54b689;
+    --main-color: #fafad2;
     --main-text-color:#fff;
     --border-color:#999;
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
+    --color-skills: #c0c07a;
 }
 
 /* General; */
@@ -128,7 +129,7 @@
     font-size: 16px;
     color: var(--main-text-color);
     background-color: var(--main-color);
-    border: 2px solid var(--main-color);
+    border:2px solid var(--main-color);
     border-radius: 5px;
     text-decoration: none;
     transition: .5s;
@@ -137,11 +138,12 @@
     width: 150px;
     text-align: center;
     display: flex;
+    color:black;
 }
 
 #btn-projects ion-icon,
 #btn-projects span{
-    flex: 1 1 0;
+    flex: 1 1 50%;
 }
 
 #btn-projects ion-icons{
@@ -150,6 +152,7 @@
 }
 #btn-projects:hover{
     background-color: transparent;
+    color:#fff
 }
 
 #skills-section-title{
@@ -166,8 +169,8 @@
 }
 
 .skills-box{
-    flex: 1 1 33%;
-    max-width: 33%;
+    flex: 1 1 50%;
+    max-width: 50%;
     margin-bottom: 35px;
 }
 
@@ -176,7 +179,7 @@
     margin-bottom: 25px;
     font-weight: bold;
     padding-left: 10px;
-    border-left: 5px solid var(--main-color);
+    border-left: 5px solid var(--color-skills);
 }
 
 .skills-box i{
